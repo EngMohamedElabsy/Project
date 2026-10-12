@@ -4,78 +4,77 @@
 [![GitHub PRs](https://img.shields.io/github/issues-pr/EngMohamedElabsy/Project?color=green)](https://github.com/EngMohamedElabsy/Project/pulls)
 [![Project Board](https://img.shields.io/badge/Board-Project%20Kanban-orange)](https://github.com/users/EngMohamedElabsy/projects/3)
 
-منصة مركزية ذكية لربط الطلاب بالفرص التدريبية والتدريب الصيفي لدى الشركات، مبنية باتباع أفضل ممارسات هندسة البرمجيات (Software Engineering Best Practices) ومعايير إدارة المتطلبات Agile / Scrum.
+A centralized software engineering platform designed to connect university students with relevant company internships and training opportunities. Built following modern Agile/Scrum requirement engineering standards and software engineering best practices.
 
 ---
 
-## 📌 عن المشروع (Problem & Solution)
+## 📌 Problem & Solution Overview
 
-### ❓ المشكلة:
-يعاني طلاب الجامعات سنوياً من تشتت فرص التدريب العملي بين منصات متعددة، ومجموعات التواصل الاجتماعي، وصعوبة متابعة حالة طلبات التقديم، بينما تواجه الشركات صعوبة في فرز وإدارة طلبات المتقدمين في مكان واحد منظم.
+### ❓ The Problem
+Every year, university students face significant hurdles searching for internship opportunities scattered across fragmented social media groups, university bulletin boards, and various job portals. Students struggle to track their application statuses, while employers find it tedious to manage and filter high volumes of applicants manually.
 
-### 💡 الحل:
-منصة موحدة تجمع كل الأطراف وتتيح:
-1. **للطلاب:** استكشاف التدريبات المناسبة لمهاراتهم، التقديم بنقرة واحدة باستخدام السيرة الذاتية، ومتابعة فورية لحالة الطلب.
-2. **للشركات / أصحاب العمل:** نشر إعلانات التدريب، استقبال وفرز المرشحين، واتخاذ قرارات القبول/الرفض بسهولة.
-3. **للإدارة:** مراقبة جودة التدريبات وإحصائيات المنصة وحماية الطلاب من الحسابات والتدريبات الوهمية.
-
----
-
-## 👥 أدوار النظام (User Roles)
-
-* 👨‍🎓 **الطالب (Student):** إنشاء الحساب، تعديل الملف الشخصي، البحث عن التدريبات والتقديم عليها ومتابعة حالتها.
-* 🏢 **صاحب العمل (Employer):** نشر فرص التدريب، مراجعة طلبات التقديم وسير المتقدمين، وتحديث قرارات القبول والرفض.
-* 🛡️ **مسؤول النظام (Admin):** إدارة الحسابات، تعطيل الحسابات المخالفة/المزعجة، ومتابعة تقارير نمو المنصة.
+### 💡 The Solution
+A unified, transparent aggregator platform that provides:
+1. **For Students:** Personalized search tailored to skills, one-click resume application, and real-time status tracking.
+2. **For Employers:** A centralized dashboard to publish internships, evaluate student applicants, and streamline accept/reject decisions.
+3. **For Admins:** Platform moderation to suspend spam or unverified employer accounts and track platform health metrics.
 
 ---
 
-## 📋 مصفوفة المتطلبات وقصص المستخدم (User Stories Matrix)
+## 👥 User Roles
 
-تم توثيق وهندسة المتطلبات بالكامل وفقاً لمنهجية **MoSCoW Prioritization**:
+* 👨‍🎓 **Student:** Creates an account, manages profile details, searches and applies for internships, and tracks application status.
+* 🏢 **Employer:** Posts new internship listings, reviews applicant profiles/resumes, and updates applicant decisions (Accept/Reject).
+* 🛡️ **Admin:** Moderates user accounts, deactivates spam/fraudulent listings, and reviews platform analytics reports.
 
-| الكود | قصة المستخدم (User Story) | الأولوية | الـ Issue على GitHub |
+---
+
+## 📋 User Stories & MoSCoW Prioritization Matrix
+
+All requirements are systematically engineered and mapped to dedicated GitHub Issues:
+
+| ID | User Story | Priority | GitHub Issue |
 |:---:|:---|:---:|:---:|
-| **US-01** | تسجيل حساب طالب جديد | **Should** | [#1](https://github.com/EngMohamedElabsy/Project/issues/1) |
-| **US-02** | تعديل وإدارة الملف الشخصي | **Could** | [#2](https://github.com/EngMohamedElabsy/Project/issues/2) |
-| **US-03** | استعادة وتعيين كلمة المرور | **Must (MVP)** | [#3](https://github.com/EngMohamedElabsy/Project/issues/3) |
-| **US-04** | تسجيل الدخول للوحة التحكم | **Must (MVP)** | [#5](https://github.com/EngMohamedElabsy/Project/issues/5) |
-| **US-05** | البحث المتقدم عن التدريبات بالاسم والشركة | **Must (MVP)** | [#6](https://github.com/EngMohamedElabsy/Project/issues/6) |
-| **US-06** | التقديم على فرصة تدريب بالسيرة الذاتية | **Must (MVP)** | [#7](https://github.com/EngMohamedElabsy/Project/issues/7) |
-| **US-07** | نشر فرصة تدريب جديدة بواسطة الشركة | **Must (MVP)** | [#8](https://github.com/EngMohamedElabsy/Project/issues/8) |
-| **US-08** | مراجعة قائمة المتقدمين للتدريب | **Should** | [#9](https://github.com/EngMohamedElabsy/Project/issues/9) |
-| **US-09** | تغيير حالة الطلب (قبول / رفض) | **Must (MVP)** | [#10](https://github.com/EngMohamedElabsy/Project/issues/10) |
-| **US-10** | تتبع حالة الطلبات المقدمة للطلاب | **Should** | [#11](https://github.com/EngMohamedElabsy/Project/issues/11) |
-| **US-11** | إيقاف حسابات الشركات المخالفة | **Should** | [#12](https://github.com/EngMohamedElabsy/Project/issues/12) |
-| **US-12** | تقارير إحصائية للتدريبات النشطة | **Could** | [#13](https://github.com/EngMohamedElabsy/Project/issues/13) |
+| **US-01** | Student Account Registration | **Should** | [#1](https://github.com/EngMohamedElabsy/Project/issues/1) |
+| **US-02** | User Profile Management | **Could** | [#2](https://github.com/EngMohamedElabsy/Project/issues/2) |
+| **US-03** | Password Reset Link | **Must (MVP)** | [#3](https://github.com/EngMohamedElabsy/Project/issues/3) |
+| **US-04** | Secure User Login | **Must (MVP)** | [#5](https://github.com/EngMohamedElabsy/Project/issues/5) |
+| **US-05** | Search Internships by Title / Company | **Must (MVP)** | [#6](https://github.com/EngMohamedElabsy/Project/issues/6) |
+| **US-06** | Apply for Internship via Profile | **Must (MVP)** | [#7](https://github.com/EngMohamedElabsy/Project/issues/7) |
+| **US-07** | Post New Internship Opportunity | **Must (MVP)** | [#8](https://github.com/EngMohamedElabsy/Project/issues/8) |
+| **US-08** | Review Student Applications List | **Should** | [#9](https://github.com/EngMohamedElabsy/Project/issues/9) |
+| **US-09** | Update Application Status (Accept / Reject) | **Must (MVP)** | [#10](https://github.com/EngMohamedElabsy/Project/issues/10) |
+| **US-10** | Track Application Status | **Should** | [#11](https://github.com/EngMohamedElabsy/Project/issues/11) |
+| **US-11** | Deactivate Spam Employer Accounts | **Should** | [#12](https://github.com/EngMohamedElabsy/Project/issues/12) |
+| **US-12** | Active Internships Growth Report | **Could** | [#13](https://github.com/EngMohamedElabsy/Project/issues/13) |
 
 ---
 
-## 🚀 نطاق النسخة الأولية (MVP Scope)
+## 🚀 Minimum Viable Product (MVP Scope)
 
-تشمل النسخة الأولى الأساسية العمليات الضرورية لتشغيل المنصة بنجاح:
-* **نطاق الـ MVP المعتمد:** `US-03`, `US-04`, `US-05`, `US-06`, `US-07`, `US-09`.
-* **المتطلب غير الوظيفي الإلزامي:** `NFR-02` (تشفير وتجزئة كلمات المرور باستخدام bcrypt).
-* باقي القصص (`Should` و `Could`) تظل في الـ Backlog للتطوير في المراحل القادمة.
-
----
-
-## ⚙️ معايير الجودة والقبول (Acceptance Criteria & DoD)
-
-* كل قصة مستخدم موثقة ومربوطة بسيناريوهات **Gherkin BDD** (`Given / When / Then`).
-* تم تحديد المتطلبات غير الوظيفية (**NFRs**) مثل الأداء والحماية ومعدل الجاهزية.
-* التوثيق الشامل متاح بالكامل في: [`docs/requirements.md`](docs/requirements.md).
+The MVP is scoped strictly to enable an end-to-end core recruitment workflow:
+* **MVP Core Stories:** `US-03`, `US-04`, `US-05`, `US-06`, `US-07`, `US-09`.
+* **Mandatory MVP NFR:** `NFR-02` (Password hashing using bcrypt with cost factor >= 12).
+* **Rationale:** This set allows employers to publish opportunities, students to search and apply securely, and employers to render hiring decisions. Remaining Should and Could stories stay prioritized in the project backlog.
 
 ---
 
-## 📊 لوحة إدارة المشروع (Project Kanban Board)
+## 📐 Acceptance Criteria & Quality Standards
 
-لمتابعة سير العمل والتطوير خطوة بخطوة:
+* Each user story is backed by strict **Gherkin BDD** scenarios (`Given / When / Then`).
+* Detailed Non-Functional Requirements (Performance, Security, Usability, Availability) and the full Requirements Specification are maintained in [`docs/requirements.md`](docs/requirements.md).
+
+---
+
+## 📊 Project Kanban Board
+
+Development progress is tracked live on the GitHub Project Board:
 👉 [**Internship Platform Board**](https://github.com/users/EngMohamedElabsy/projects/3)
-* 🔵 **To Do:** قائمة المهام والقصص قيد الانتظار.
-* 🟡 **To Program:** المهام التي يجري تطويرها حالياً.
-* 🟢 **Done:** الميزات المكتملة والمختبرة.
+* 🔵 **To Do:** Prioritized backlog items.
+* 🟡 **To Program:** User stories currently under development.
+* 🟢 **Done:** Completed and verified user stories.
 
 ---
 
-## 👨‍💻 المساهمون والمطورون
+## 👨‍💻 Author & Maintainer
 * **Mohamed Elabsy** - [@EngMohamedElabsy](https://github.com/EngMohamedElabsy)
