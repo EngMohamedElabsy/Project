@@ -1,0 +1,24 @@
+# System / OS
+.DS_Store
+Thumbs.db
+
+# Logs & temp
+*.log
+*.tmp
+temp.md
+setup_lab2.sh
+
+# IDE & Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Environment & Dependencies (future-proof)
+.env
+.env.local
+node_modules/
+__pycache__/
+*.py[cod]
+venv/
+.venv/
